@@ -12,7 +12,7 @@ public class LiquidacionSueldo{
   int SueldoConHorasExtras;
 
   /* Este metodo captura los datos del usuario por teclado */
-  public void IngresoDatos() {
+  public void ingresoDatos() {
     Scanner sc1 = new Scanner(System.in);
     System.out.println("-----------------------------------------------");
     System.out.println("************ Bienvenido al Sistema ************");
@@ -32,18 +32,18 @@ public class LiquidacionSueldo{
   }
 
   /* Este metodo realiza el calculo de las horas extras */
-  public void CalcularHorasExtras() {
+  public void calcularHorasExtras() {
     CalculoValorHorasExtras = ValorHoraExtra * HorasExtras;
   }
 
   /* Este metodo realiza el calculo de sueldo mas las horas extras */
-  public void CalcularSueldo() {
+  public void calcularSueldo() {
     SueldoSinHorasExtras = Sueldo * DiasTrabajados;
     SueldoConHorasExtras = SueldoSinHorasExtras + CalculoValorHorasExtras;
   }
 
 /* Este metodo realiza la impresion por pantalla */
-  public void ImprimirResultados() {
+  public void imprimirResultados() {
     System.out.println("\n");
     System.out.println("-----------------------------------------------");
     System.out.println("******** Calculo Liquidacion de Sueldo ********");
