@@ -45,6 +45,7 @@ public class LiquidacionSueldo{
 /* Este metodo realiza la impresion por pantalla */
   public void imprimirResultados() {
     System.out.println("\n");
+    º
     System.out.println("-----------------------------------------------");
     System.out.println("******** Calculo Liquidacion de Sueldo ********");
     System.out.println("-----------------------------------------------");
