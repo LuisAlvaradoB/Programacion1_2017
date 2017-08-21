@@ -66,6 +66,7 @@ public class LiquidacionSueldo{
   /* Metodo principal */
   public static void main(String[] args) {
     LiquidacionSueldo objeto1 = new LiquidacionSueldo(); /* Se crea el objeto */
+    /* Se invocan los metodos */
     objeto1.IngresoDatos();
     objeto1.CalcularHorasExtras();
     objeto1.CalcularSueldo();
