@@ -1,18 +1,8 @@
 import java.util.Scanner;
 
-public class DatosAlumno {
+public class DatosAlumno1 {
 
-  /* Metodo principal*/
-  public static void main(String[] args) {
-
-    /* Declaracion de variables*/
-    String nombreAlumno, apellidoAlumno, carreraAlumno, semestreAlunmno;
-    int nota1Alumno, nota2Alumno, nota3Alumno, nota4Alumno, promedioAlumno,
-        sumaNotasAlumno;
-
-    /* Ingreso de datos
-      Se crea el objeto sc de la clase Scanner el cual captura los datos de
-      entrada*/
+  void ingresarDatos() {
     Scanner sc = new Scanner(System.in);
     System.out.println("*****************  BIENVENIDO  *********************");
     System.out.println("----------------------------------------------------");
@@ -40,16 +30,26 @@ public class DatosAlumno {
     System.out.println("Ingrese 4 nota del alumno : ");
     nota4Alumno = sc.nextInt();
     System.out.println("----------------------------------------------------");
+  }
 
-    /* Calculo del promedio*/
+  void calcularPromedio() {
     sumaNotasAlumno = nota1Alumno + nota2Alumno + nota3Alumno + nota4Alumno;
     promedioAlumno = sumaNotasAlumno / 4;
+  }
 
-    /* Impresion de los resultados por pantalla*/
+  void imprimirResultados() {
     System.out.println("\n");
     System.out.println("El promedio del alumno es : " + promedioAlumno);
     System.out.println("----------------------------------------------------");
+  }
 
+  public static void main(String[] args) {
+
+    DatosAlumno1 objeto1 = new DatosAlumno1();
+
+    objeto1.ingresarDatos();
+    objeto1.calcularPromedio();
+    objeto1.imprimirResultados();
 
   }
 }
