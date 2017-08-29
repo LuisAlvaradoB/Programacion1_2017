@@ -78,11 +78,8 @@ public class DatosAlumno {
 
     /* Impresion de los resultados por pantalla*/
     System.out.println("\n");
-    System.out.println("El Sr " +nombreAlumno  + apellidoAlumno);
-    System.out.println("De la carrera de " +carreraAlumno);
-    System.out.println("Semestre " +semestreAlumno);
-    System.out.println("En la asignatura de " +asignaturaAlumno);
-    System.out.println("Obtuvo un promedio de " +promedioAlumno);
-    System.out.println("Siendo su estado final " +estadoFinalAlumno);
+    System.out.println("El Sr " +nombreAlumno +" " +apellidoAlumno +" de la carrera de " +carreraAlumno +", " +"semestre " +semestreAlumno);
+    System.out.println("En la asignatura de " +asignaturaAlumno +" " +"obtuvo un promedio de " +promedioAlumno);
+    System.out.println("siendo su estado final " +estadoFinalAlumno);
     } 
 }
