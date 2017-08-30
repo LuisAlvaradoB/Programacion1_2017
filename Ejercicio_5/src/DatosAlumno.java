@@ -6,7 +6,7 @@ public class DatosAlumno {
   String runAlumno, nombreAlumno, apellidoAlumno, carreraAlumno, semestreAlumno,
       asignaturaAlumno, estadoFinalAlumno;
   int nota1Alumno, nota2Alumno, nota3Alumno, nota4Alumno, promedioAlumno,
-      sumaNotasAlumno;
+      sumaNotasAlumno, asistenciaAlumno;
 
     //Metodo para realizar el ingreso de los datos por pantalla, no retorna variable
     void ingresarDatos(){
@@ -61,6 +61,10 @@ public class DatosAlumno {
       nota4Alumno = sc.nextInt();
       System.out.println("----------------------------------------------------");
 
+      System.out.println("Ingrese % de asistencia : ");
+      asistenciaAlumno = sc.nextInt();
+      System.out.println("----------------------------------------------------");
+
     }
 
     //Metodo para realizar el calculo del promedio y situacion final, no retorna variable
@@ -69,7 +73,7 @@ public class DatosAlumno {
       promedioAlumno = sumaNotasAlumno / 4;
 
       /* Condicional IF para resolver estado final*/
-      if (promedioAlumno >=40) {
+      if (promedioAlumno >=40 && asistenciaAlumno >=70) {
         estadoFinalAlumno = "Aprobado";
       } else {
         estadoFinalAlumno = "Reprobado";
