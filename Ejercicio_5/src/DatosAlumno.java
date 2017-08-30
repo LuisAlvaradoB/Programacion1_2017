@@ -4,7 +4,7 @@ public class DatosAlumno {
 
 //Declaracion de variables
   String runAlumno, nombreAlumno, apellidoAlumno, carreraAlumno, semestreAlumno,
-      asignaturaAlumno, estadoFinalAlumno;
+      asignaturaAlumno, estadoFinalAlumno, aprobNota, aprobAsistencia, estadoFinal;
   int nota1Alumno, nota2Alumno, nota3Alumno, nota4Alumno, promedioAlumno,
       sumaNotasAlumno, asistenciaAlumno;
 
@@ -78,7 +78,36 @@ public class DatosAlumno {
       } else {
         estadoFinalAlumno = "Reprobado";
       }
+
+
+      /*
+      if (promedioAlumno >=40) {
+          aprobNota = "Aprobado";
+        } else {
+          aprobNota = "Reprobado";
+        }
+      if (asistenciaAlumno >=70) {
+          aprobAsistencia = "Aprobado";
+      } else {
+        aprobAsistencia = "Reprobado";
+      }
+
+      if (aprobNota = "Aprobado" && aprobAsistencia = "Aprobado") {
+        estadoFinal = "Aprobado";
+      }   else {
+            if (aprobNota = "Aprobado" && aprobAsistencia = "Reprobado") {
+              estadoFinal = "Reprobado por asistencia"  ;
+            } else {
+                if (aprobNota = "Reprobado" && aprobAsistencia = "Aprobado") {
+                  estadoFinal = "Reprobado por nota";
+                }
+              }
+          }
+          */
     }
+
+
+
 
     //Metodo para imprimir los resultados por pantalla, no retorna variable
     void imprimirResultados(){
